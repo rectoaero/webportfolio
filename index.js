@@ -1,7 +1,7 @@
 {
     "capstone": {
-        "liveLink": "<github page link>",
-        "name": "<your name>",
+        "liveLink": "https://rectoaero.github.io/webportfolio/",
+        "name": "Aero Recto",
         "isMulti": false
     }
 }
