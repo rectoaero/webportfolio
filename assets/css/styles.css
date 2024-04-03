@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: rgb(54, 100, 71);
+  --first-color: rgb(128, 0, 0);
   --black-color: hsl(0, 0%, 0%);
   --black-color-light: hsl(0, 0%, 40%);
   --white-color: hsl(0, 0%, 95%);
@@ -109,7 +109,7 @@ img {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --first-color: rgb(54, 100, 71);
+  --first-color: rgb(128, 0, 0);
   --black-color: hsl(0, 0%, 18%);
   --black-color-light: hsl(0, 0%, 30%);
   --title-color: hsl(0, 0%, 95%);
@@ -127,7 +127,7 @@ body.dark-theme {
 
 .dark-theme .section__title-1::after,
 .dark-theme .section__title-2::after {
-  background-color: rgb(54, 100, 71);
+  background-color: rgb(128, 0, 0);
 }
 
 .dark-theme :is(.home__arrow, .home__line, .about__line) {
@@ -135,7 +135,7 @@ body.dark-theme {
 }
 
 .dark-theme .home__description b {
-  background: linear-gradient(90deg, rgb(54, 100, 71), hsla(14, 98%, 50%, 0));
+  background: linear-gradient(90deg, rgb(128, 0, 0), hsla(14, 98%, 50%, 0));
 }
 
 .dark-theme :is(.button-ghost, .services__icon i) {
@@ -199,7 +199,7 @@ body.dark-theme {
   content: '';
   width: 40px;
   height: 28px;
-  background-color: rgb(54, 100, 71);
+  background-color: rgb(128, 0, 0);
   position: absolute;
   top: -4px;
   right: -8px;
@@ -481,7 +481,7 @@ body.dark-theme {
 }
 
 .home__description b {
-  background: linear-gradient(90deg, rgb(54, 100, 71), hsla(14, 98%, 50%, 0));
+  background: linear-gradient(90deg, rgb(128, 0, 0), hsla(14, 98%, 50%, 0));
 }
 
 .home__scroll {

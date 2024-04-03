@@ -46,24 +46,31 @@ const sendEmail = (e) => {
   e.preventDefault();
 
   // serviceID - templateID - #form - publicKey
-  emailjs.sendForm('', '', '', '').then(
-    () => {
-      //Show sent message
-      contactMessage.textContent = 'Message sent successfully ✅';
+  emailjs
+    .sendForm(
+      'service_ojvqg6p',
+      'template_rxoq06f',
+      '#contact-form',
+      'SSmFgge2W13G7bW8e'
+    )
+    .then(
+      () => {
+        //Show sent message
+        contactMessage.textContent = 'Message sent successfully ✅';
 
-      // Remove message after five seconds
-      setTimeout(() => {
-        contactMessage.textContent = '';
-      }, 5000);
+        // Remove message after five seconds
+        setTimeout(() => {
+          contactMessage.textContent = '';
+        }, 5000);
 
-      // Clear input fields
-      contactForm.reset();
-    },
-    () => {
-      //Show error message
-      contactMessage.textContent = 'Message not sent (service error) ❌';
-    }
-  );
+        // Clear input fields
+        contactForm.reset();
+      },
+      () => {
+        //Show error message
+        contactMessage.textContent = 'Message not sent (service error) ❌';
+      }
+    );
 };
 
 contactForm.addEventListener('submit', sendEmail);
